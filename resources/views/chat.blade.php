@@ -17,7 +17,7 @@
 
 <body id="chat">
 <ul id="messages">
-    <li v-repeat="message: messages">{{ message }}</li>
+    <li v-repeat="message: messages">@{{ message }}</li>
 </ul>
 
 <form v-on="submit: send">
