@@ -2,12 +2,12 @@
 
 use Illuminate\Support\Facades\Redis;
 
-Route::get('/', function () {
+Route::get('/redis', function () {
     event(new \App\Events\UserSignedUp('Tieu Ngao'));
     return view('welcome');
 });
 
-Route::get('chat', function(){
+Route::get('/', function(){
     return view('chat');
 });
 
